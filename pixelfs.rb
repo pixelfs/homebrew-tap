@@ -11,7 +11,7 @@ class Pixelfs < Formula
   on_macos do
     on_intel do
       url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_darwin_amd64_1.0.0.tar.gz"
-      sha256 "452c79fd67c307a8d2449597a1a8b8f8b1d70264ce0e275fd43cc06fd284720f"
+      sha256 "f5f12e4fe974f551fc5c27ab4f1133fc26beb212a4a0ddbf1b92def4cbc18d86"
 
       def install
         bin.install "pixelfs"
@@ -21,7 +21,7 @@ class Pixelfs < Formula
     end
     on_arm do
       url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_darwin_arm64_1.0.0.tar.gz"
-      sha256 "e47136cefb9aeb15f4ef1bc923a86f3d6361d66a11149eced0db062e93c6a01a"
+      sha256 "9eae336456bc08cba2bf261a62862a3ac4f08095e76406b108de976c9699da57"
 
       def install
         bin.install "pixelfs"
@@ -35,7 +35,7 @@ class Pixelfs < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_amd64_1.0.0.tar.gz"
-        sha256 "5df004e48727ffa9579e723ccfc3509b721ee8f629f2f4c407af6f9b19606dae"
+        sha256 "da14cdc6d12f618dc8b0fdfaef5145405cef6f0d62d7ffee950f6d50c2543f76"
 
         def install
           bin.install "pixelfs"
@@ -47,7 +47,7 @@ class Pixelfs < Formula
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_armv7_1.0.0.tar.gz"
-        sha256 "6086348c10bcd92cf806b523af4573ef0fde841a6b71f69f54457e909f7ce9f2"
+        sha256 "a8645662470ecfea3cfabd763264300f7e7745f7553cf9d2133cf5f9188e9467"
 
         def install
           bin.install "pixelfs"
@@ -59,7 +59,7 @@ class Pixelfs < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_arm64_1.0.0.tar.gz"
-        sha256 "67343a0b963fe6382773102e9caf7c134efaee132a4093121763da3fdeac3814"
+        sha256 "1e3e94a7a64b9b760384ae2341abbceba21413b5be5e0c963e63c5011cd2ae64"
 
         def install
           bin.install "pixelfs"
