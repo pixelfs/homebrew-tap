@@ -11,22 +11,18 @@ class Pixelfs < Formula
   on_macos do
     on_intel do
       url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_darwin_amd64_1.0.0.tar.gz"
-      sha256 "4322c17676b3c1bf043e0f5a99958668eba6872cf4601ac4988f29881ae10b00"
+      sha256 "effc0abf5e5f219e38686ba177aee857fa7e122e4a3076cb71de986284008d2e"
 
       def install
         bin.install "pixelfs"
-        bash_completion.install "completions/bash_autocomplete" => "pixelfs"
-        zsh_completion.install "completions/zsh_autocomplete" => "_pixelfs"
       end
     end
     on_arm do
       url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_darwin_arm64_1.0.0.tar.gz"
-      sha256 "4db8dc17240954f2494f1ca7c2140f95678a0e60cb9409494e8023787984fcc8"
+      sha256 "dbb4bed011bb7de1d06aaa7025e188f60967eb61419a98aebc2535804d3f0e1d"
 
       def install
         bin.install "pixelfs"
-        bash_completion.install "completions/bash_autocomplete" => "pixelfs"
-        zsh_completion.install "completions/zsh_autocomplete" => "_pixelfs"
       end
     end
   end
@@ -35,36 +31,30 @@ class Pixelfs < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_amd64_1.0.0.tar.gz"
-        sha256 "08f7d7063cb7c04f6fbba8b1244583f9d29028bf9150b5ef170674bfecb40bcf"
+        sha256 "d59aa1ec92c5215a37642878bb74220b44f20333157b0f3b572d906789a73bd5"
 
         def install
           bin.install "pixelfs"
-          bash_completion.install "completions/bash_autocomplete" => "pixelfs"
-          zsh_completion.install "completions/zsh_autocomplete" => "_pixelfs"
         end
       end
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_armv7_1.0.0.tar.gz"
-        sha256 "3d5b1e7f416b6e1d742baef8edf9ff61703aea378122324ee137a6deebf16835"
+        sha256 "551177754b5aa0a9dc9cd7d60b3868f3453622189da93cd5958dd3f356fc0de0"
 
         def install
           bin.install "pixelfs"
-          bash_completion.install "completions/bash_autocomplete" => "pixelfs"
-          zsh_completion.install "completions/zsh_autocomplete" => "_pixelfs"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_arm64_1.0.0.tar.gz"
-        sha256 "11f4335f6c9203da17803ab747ea0ae31da5816340280ad13717da7f5e0032ba"
+        sha256 "5f870f3356c3c4c1c151647a91473ea8a11dba3314865c54615ec1a213a5dbdb"
 
         def install
           bin.install "pixelfs"
-          bash_completion.install "completions/bash_autocomplete" => "pixelfs"
-          zsh_completion.install "completions/zsh_autocomplete" => "_pixelfs"
         end
       end
     end
