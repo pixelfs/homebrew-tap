@@ -5,21 +5,21 @@
 class Pixelfs < Formula
   desc "A cross-device file system, Transfer files based on s3-protocol."
   homepage "https://github.com/pixelfs/pixelfs"
-  version "1.0.0"
+  version "1.0.1"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_darwin_amd64_1.0.0.tar.gz"
-      sha256 "458e73ce0202db2a46bb0c4e0ae70d9f12e4d4ce370ea2d373adafb423257bc4"
+      url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.1/pixelfs_darwin_amd64_1.0.1.tar.gz"
+      sha256 "c1957fc69ed73b2a9ded56627fea528e0e60cc1f35ea6ad04d4b0c4405f438bd"
 
       def install
         bin.install "pixelfs"
       end
     end
     on_arm do
-      url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_darwin_arm64_1.0.0.tar.gz"
-      sha256 "1450f8a798c3cf9df331ec7b8ad1047cf277f4e8628222e60b556a093de80e17"
+      url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.1/pixelfs_darwin_arm64_1.0.1.tar.gz"
+      sha256 "e5a460973d8d2f44f0f0fc58e937001a95721e90663708b6f95722dc39c546c7"
 
       def install
         bin.install "pixelfs"
@@ -30,8 +30,8 @@ class Pixelfs < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_amd64_1.0.0.tar.gz"
-        sha256 "bbacc8f1303fa0a532accd017ca33ad37251568f9508479cb179228429cc40e1"
+        url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.1/pixelfs_linux_amd64_1.0.1.tar.gz"
+        sha256 "f2f0cc0897ab1e3617eaeb0e77e68b16fbd27998b8cec83c1cf178b77db4bf07"
 
         def install
           bin.install "pixelfs"
@@ -40,8 +40,8 @@ class Pixelfs < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_armv7_1.0.0.tar.gz"
-        sha256 "26b72a483c6c69c59a98043a12caf1fdba9efda37cae4d26e30026967ab6c471"
+        url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.1/pixelfs_linux_armv7_1.0.1.tar.gz"
+        sha256 "db2de8da565fb70cde2a4af889cae99011655b730e8214cca243b3890651ff11"
 
         def install
           bin.install "pixelfs"
@@ -50,8 +50,8 @@ class Pixelfs < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.0/pixelfs_linux_arm64_1.0.0.tar.gz"
-        sha256 "9d4201888efc3b64117d63c996f6d1a2ce39a6cbd6e67b57f9fb7a8b7d4325a8"
+        url "https://github.com/pixelfs/pixelfs/releases/download/v1.0.1/pixelfs_linux_arm64_1.0.1.tar.gz"
+        sha256 "be565743ce3e0df6a0f252525c703895509c3f242b53422c6faa934141da6345"
 
         def install
           bin.install "pixelfs"
